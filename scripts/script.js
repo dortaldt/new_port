@@ -56,7 +56,7 @@ Vue.component('nav-menu', {
         </div>            
         <ul>
             <li v-for="(item, index) in items">
-                <a :href="'/#' + item.link" @click="this.app.toggleMenu()" :key="index + '_menu_item'" >
+                <a :href="'./#' + item.link" @click="this.app.toggleMenu()" :key="index + '_menu_item'" >
                     {{item.name}}
                 </a>
             </li>
