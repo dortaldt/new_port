@@ -78,7 +78,7 @@ Vue.component('project', {
             <div class="card">
                 <div class="img-wrap">
                     <div class="img-filter"></div>
-                    <div class='proj-img' :style='{backgroundImage : "url(." + project_prop.previewImg + ")"}'></div>
+                    <div class='proj-img' :style='{backgroundImage : "url(" + project_prop.previewImg + ")"}'></div>
                     <div class="labels">
                         <h3>{{project_prop.platform}}</h3>
                         <h3 v-if="project_prop.linkTo != undefined">Link</h3>
