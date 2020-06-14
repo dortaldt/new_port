@@ -35,7 +35,7 @@ Vue.component('app-header', {
             <button @click="this.app.toggleMenu()">
                 <span class="material-icons">menu</span>
             </button>
-            <span><a href="/" >{{title}}</a></span>
+            <span><a href="./" >{{title}}</a></span>
         </div>
     </div>
     `
