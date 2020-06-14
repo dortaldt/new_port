@@ -4,7 +4,7 @@ projects = [
         "name": "Predictables",
         "platform": "Wearable",
         "shortDes":"Modern fortune teller",
-        "previewImg":"/images/overviews/pred_overview.png",
+        "previewImg":"./images/overviews/pred_overview.png",
         "mainImg":"https://player.vimeo.com/video/69424855",
         "mainVideo": true,
         "longDes": [
@@ -15,22 +15,22 @@ projects = [
             {
                 "id": 0,
                 "title": "Wall projector",
-                "imgUrl": "/images/projects/pred/pred_3.png"
+                "imgUrl": "./images/projects/pred/pred_3.png"
             },
             {
                 "id": 1,
                 "title": "Hand projector",
-                "imgUrl": "/images/overviews/pred_overview.png"
+                "imgUrl": "./images/overviews/pred_overview.png"
             },
             {
                 "id": 2,
                 "title": "Events are being displayed as future bubbles",
-                "imgUrl": "/images/projects/pred/pred_gif_1.gif"
+                "imgUrl": "./images/projects/pred/pred_gif_1.gif"
             },
             {
                 "id": 3,
                 "title": "Prototying and exploring the interactions, using projectors",
-                "imgUrl": "/images/projects/pred/pred_2.png"
+                "imgUrl": "./images/projects/pred/pred_2.png"
             }
 
         ]
@@ -40,9 +40,9 @@ projects = [
         "name": "Rocket League Stats",
         "platform": "Console",
         "shortDes":"A new stats screen design for the e-sport game 'Rocket League'",
-        "previewImg":"/images/overviews/rocket_overview.jpg",
-        "maiImg2x": "/images/overviews/rocket_overview_2x.png",
-        "mainImg":"/images/overviews/rocket_overview.jpg",
+        "previewImg":"./images/overviews/rocket_overview.jpg",
+        "maiImg2x": "./images/overviews/rocket_overview_2x.png",
+        "mainImg":"./images/overviews/rocket_overview.jpg",
         "longDes":[
             "One of the critical aspects of playing a competitive game is the ability to track your progression and improvement. Rocket League (add link) is one of the most popular esports play today, and yet, its stats screen has been neglected for a long time. Many users have testified the information is shown currently is misaligned with their actual excitement while achieving those records.",
             "In this project, I've redesigned the stats screen for presenting the desired information (as been testified by actual users). Following the gaming world visual language, my goal was to create a better visual hierarchy, as well as to provide new, engaging, information. ",
@@ -52,17 +52,17 @@ projects = [
             {
                 "id": 0,
                 "title": "Wins Vs. Loses trend",
-                "imgUrl": "/images/projects/rocket/rocket_1.png"
+                "imgUrl": "./images/projects/rocket/rocket_1.png"
             },
             {
                 "id": 1,
                 "title": "Achivements",
-                "imgUrl": "/images/projects/rocket/rocket_2.png"
+                "imgUrl": "./images/projects/rocket/rocket_2.png"
             },
             {
                 "id": 2,
                 "title": "Games record",
-                "imgUrl": "/images/projects/rocket/rocket_3.png"
+                "imgUrl": "./images/projects/rocket/rocket_3.png"
             }
 
         ]
@@ -72,8 +72,8 @@ projects = [
         "name": "'Now' App",
         "platform": "Mobile App",
         "shortDes":"Making todo apps great again",
-        "previewImg":"/images/overviews/todo_overview.png",
-        "mainImg":"/images/overviews/todo_overview.png",
+        "previewImg":"./images/overviews/todo_overview.png",
+        "mainImg":"./images/overviews/todo_overview.png",
         "longDes":[
             "So many things to do, so little time to do it all. How can we make it easier to tackle the most important first?",
             "By creating 'Now' app, my goal was to provide an extra layer of information, and that to achieve better alignment with the user's mental model when searching for their next task."
@@ -84,22 +84,22 @@ projects = [
             {
                 "id": 0,
                 "title": "Each task is being prioritized by two factors: it's urgency (when?) and impact (what?). By combining these two variables into a ranking system, the tasks are being sorted so the user can easily find the top ones. Also, a score is given to each task based on the two factors.",
-                "imgUrl": "/images/projects/todo/todo_1.svg"
+                "imgUrl": "./images/projects/todo/todo_1.svg"
             },
             {
                 "id": 1,
                 "title": "By completing tasks with a high score, the user can track there progression and get motivated to keep on completing more tasks.",
-                "imgUrl": "/images/projects/todo/todo_2.svg"
+                "imgUrl": "./images/projects/todo/todo_2.svg"
             },
             {
                 "id": 2,
                 "title": "",
-                "imgUrl": "/images/projects/todo/todo_4.svg"
+                "imgUrl": "./images/projects/todo/todo_4.svg"
             },
             {
                 "id": 3,
                 "title": "Create a new task by prioritizing it's importance",
-                "imgUrl": "/images/projects/todo/todo_3.png"
+                "imgUrl": "./images/projects/todo/todo_3.png"
             }
 
         ]
@@ -110,8 +110,8 @@ projects = [
         "platform": "Web",
         "shortDes":"A recipe app for people how hates recipe apps, but do like cooking",
         "longDes":["This is a new concept app for cooking instructions. The idea behind this app is to optimize the UX for using recipes while executing the instructions . Please visit the live app for experiencing the product."],
-        "previewImg":"/images/overviews/banana_overview.png",
-        "mainImg":"/images/overviews/banana_overview.png",
+        "previewImg":"./images/overviews/banana_overview.png",
+        "mainImg":"./images/overviews/banana_overview.png",
         "linkTo":"https://www.thebananabread.com/"
     },
     {
@@ -119,8 +119,8 @@ projects = [
         "name": "Not Yet App",
         "platform": "Web",
         "shortDes":"Help others to keep track the status of a burning question",
-        "previewImg":"/images/overviews/notyet_overview.png",
-        "mainImg":"/images/overviews/notyet_overview.png",
+        "previewImg":"./images/overviews/notyet_overview.png",
+        "mainImg":"./images/overviews/notyet_overview.png",
         "linkTo":"https://notyetapp.herokuapp.com/"
     }
 ]
