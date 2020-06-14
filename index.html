@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dor Tal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38866967-5"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-38866967-1');
+    </script>
+    <link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
+  </head>
+
+  <body>
+    <div id='app'>
+      <header>
+        <app-header :title="appName"></app-header>
+      </header>
+      <div class="desktop-layout">
+        <nav-menu :menu-state="menuState" :items="menuItems"></nav-menu>
+        <div :class="{'page' : true, 'home' : selectedPage == 'home'}" v-if="selectedPage == 'home'">
+
+          <!-- Landing page section -->
+
+          <section id='home-page'>
+            <div class="nav-placeholder"></div>
+            <div class="home-cont">
+              <p class="big-text">Here’s a glimpse of my <a name="#works" @click="smoothScroll('works')">works</a></p>
+              <p class="big-text">Learn more <a name="#about" @click="smoothScroll('about')" >about me</a></p>
+              <p class="big-text">Wanna say hello? <a name="#talk" @click="smoothScroll('talk')" >let’s talk</a></p>
+            </div>
+          </section>
+
+          <!-- Works section -->
+
+          <section id="works-sec">
+            <a id="works"></a>
+            <div class="divider"></div>
+            <h1>Works</h1>
+            <div class="projects">
+              <project v-for='(item, index) in projects' :id='item.name' :project_prop="item" :key="index + '_project'" @click="this.selectedPage = 'project'"></project>
+            </div>
+          </section>
+
+          <!-- About me section -->
+
+          <section id="about-sec">
+            <a id="about"></a>
+            <div class="divider"></div>
+            <h1>About me</h1>
+            <div>
+              <p>Hi again,</p>
+              <p>As I mentioned before, I’m Dor, and I’m a full-stack UX designer. I’m passionate about leading products --  from ideation to producing a functional, esthetic, and valuable products.</p>
+              <p>I like to combine advanced designing skills with deep technical knowledge to create innovative solutions.</p>
+              <p>Currently designing and leading a product team at <a href="https://www.booking.com/" target="_blank">Booking.com</a></p>
+            </div>
+          </section>
+
+          <!-- Contact section -->
+
+          <section id="contact-sec">
+            <a id="talk"></a>
+            <div class="divider"></div>
+            <h1>Let's talk</h1>
+            <ul>
+              <li v-for='(item, index) in contacts' :key='index + "_contact"'>
+                <a :href="item.url">
+                  <img :src='"./icons/" + item.name + ".svg"' ></img>
+                  <p>{{item.name}}</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <footer class="main-footer"><p>Dor Tal {{date}}</p></footer>
+
+        </div>
+      </div>
+
+      <!-- Project Page -->
+
+      <div class="page" v-if='selectedPage == "project"'>
+        <section id=''>
+          <div class="nav-placeholder"></div>
+          <div class="project-header">
+            <div class="project-title">
+              <h1>{{projects[selectedProject].name}}</h1>
+              <h3>{{projects[selectedProject].platform}}</h3>
+            </div>
+            <p>{{projects[selectedProject].shortDes}}</p>
+            <a href="projects[selectedProject].linkTo" v-if="projects[selectedProject].linkTo != undefined" target="_blank">
+              <p>Live app</p>
+              <span class="material-icons md-18">open_in_new</span>
+            </a>
+          </div>
+          <div class="project-main-img">
+            <div class="video-player" v-if="projects[selectedProject].mainVideo">
+              <video-player link-to="https://player.vimeo.com/video/69424855?title=0&byline=0&portrait=0"></video-player>
+            </div>
+            <img v-else :src="projects[selectedProject].mainImg">
+          </div>
+          <div>
+            <p v-for="per in projects[selectedProject].longDes">{{per}}</p>
+          </div>
+          <div class="project-sections" v-for='section in projects[selectedProject].sections'>
+            <div class="project-cont">
+              <p>{{section.title}}</p>
+              <div class="project-sec-img">
+                <img :src="section.imgUrl" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Page Footer -->
+
+        <footer>
+          <a :href="'?projectId=' + (projects[selectedProject].id + 1)" class="next-btn">
+            <span class="material-icons">arrow_forward</span>
+            <span class="next-btn-cont" v-if="(projects[selectedProject].id + 1) < projects.length">
+              <p> {{projects[projects[selectedProject].id + 1].name}} </p>
+            </span>
+            <span class="next-btn-cont" v-else>
+              <p>Home</p>
+            </span>
+          </a>
+        </footer>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router"></script>
+  <script src="https://unpkg.com/vue-meta/dist/vue-meta.js"></script>
+  <script src="data.json"></script>
+  <script src="scripts/script.js"></script>
+
+</html>
