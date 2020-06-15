@@ -89,7 +89,7 @@ header {
 
 .header-cont {
     width: 100%;
-    max-width: 700px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -105,13 +105,16 @@ header a {
 }
 
 .nav-placeholder {
-    height: 59px;
+    height: 62px;
     width: 100%;
     visibility: hidden;
 }
 
 #home-page {
-    /* height: 100vh; */
+    /* height: 90vh !IMPORTANT; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home {
@@ -156,8 +159,8 @@ button {
 
 section {
     min-height: 100vh;
-    max-width: 600px;
-    margin: 24px 16px;
+    /* max-width: 600px; */
+    margin: 0px 16px;
 }
 
 section > h1 {
@@ -196,12 +199,13 @@ section > h1 {
 
 .card-wrap {
     position: relative;
+    margin: 16px 0;
 }
 
 .card {
-    max-width: 500px;
+    /* max-width: 500px; */
     position: relative;
-    margin: 16px auto;
+    /* margin: 16px auto; */
     background: linear-gradient(140.72deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.12) 100%);
     border: 1px solid rgb(27, 27, 27);
     border-radius: 16px;
@@ -419,10 +423,17 @@ footer {
 .material-icons.md-48 { font-size: 48px; }
 
 
-@media only screen and (min-width: 700px) {
+/* ----------------- DESKTOP ------------------ */
+
+@media only screen and (min-width: 1000px) {
     body {
-      max-width: 700px;
+      max-width: 1200px;
       margin: auto;
+    }
+
+    .project-page {
+        max-width: 900px;
+        margin: auto;
     }
 
     #home-page {
@@ -436,13 +447,28 @@ footer {
     }
 
     .card-wrap {
-        /* width: 48%; */
+        width: 46%;
+        min-width: 410px;
+        margin-right: 24px;
     }
 
     .card {
-        max-width: 500px;
-        margin-right: auto;
-        margin-left: 0;
+        max-width: none;
+        display: flex;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .card-wrap:hover {
+        border-radius: 16px;
+        box-shadow: 0px 0px 0px 1px #FFC107;
+    }
+
+    .proj-img {
+        width: 230px;
+        min-height: 230px;
     }
 
     .home-cont {
@@ -450,8 +476,8 @@ footer {
     }
 
     .projects {
-        /* flex-direction: row; */
-        /* flex-wrap: wrap; */
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .menu-wrap {
@@ -463,3 +489,17 @@ footer {
         /* color: #F2D74C; */
     }
   }
+
+@media only screen and (max-width: 899px) {
+    .card-wrap {
+        /* width: 48%; */
+        width: 100%;
+        /* border-radius: 16px; */
+    }
+
+    .card {
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+    }
+}
