@@ -83,12 +83,12 @@
               <li v-for='(item, index) in contacts' :key='index + "_contact"'>
                 <a :href="item.url">
                   <img :src='"./icons/" + item.name + ".svg"' ></img>
-                  <p>{{item.name}}</p>
+                  <p class="big-text">{{item.name}}</p>
                 </a>
               </li>
             </ul>
           </section>
-
+          <div class="divider"></div>
           <footer class="main-footer"><p>Dor Tal {{date}}</p></footer>
 
         </div>
@@ -105,7 +105,7 @@
               <h3>{{projects[selectedProject].platform}}</h3>
             </div>
             <p>{{projects[selectedProject].shortDes}}</p>
-            <a href="projects[selectedProject].linkTo" v-if="projects[selectedProject].linkTo != undefined" target="_blank">
+            <a :href="projects[selectedProject].linkTo" v-if="projects[selectedProject].linkTo != undefined" target="_blank">
               <p>Live app</p>
               <span class="material-icons md-18">open_in_new</span>
             </a>

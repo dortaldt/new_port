@@ -44,9 +44,8 @@ projects = [
         "maiImg2x": "./images/overviews/rocket_overview_2x.png",
         "mainImg":"./images/overviews/rocket_overview.jpg",
         "longDes":[
-            "One of the critical aspects of playing a competitive game is the ability to track your progression and improvement. Rocket League (add link) is one of the most popular esports play today, and yet, its stats screen has been neglected for a long time. Many users have testified the information is shown currently is misaligned with their actual excitement while achieving those records.",
-            "In this project, I've redesigned the stats screen for presenting the desired information (as been testified by actual users). Following the gaming world visual language, my goal was to create a better visual hierarchy, as well as to provide new, engaging, information. ",
-            "here are some real feedback pieces provided by the RL community (link to Reddit)"
+            "One of the critical aspects of playing a competitive game is the ability to track your progression and improvement. Rocket League is one of the most popular esports play today, and yet, its stats screen has been neglected for a long time. Many users have testified the information is shown currently is misaligned with their actual excitement while achieving those records.",
+            "In this project, I've redesigned the stats screen for presenting the desired information (as been testified by actual users). Following the gaming world visual language, my goal was to create a better visual hierarchy, as well as to provide new, engaging, information. "
         ],
         "sections":[
             {
