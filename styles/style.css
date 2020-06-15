@@ -331,7 +331,10 @@ section > h1 {
 
 .project-main-img img{
     width: 100%;
-    margin: 24px 0;
+    margin: 24px auto;
+    /* max-width: 800px; */
+    /* margin: auto; */
+    display: inherit;
 }
 
 .project-main-video {

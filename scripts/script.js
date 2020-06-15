@@ -73,8 +73,7 @@ Vue.component('project', {
     },
     template: `
         <div class="card-wrap">
-            <a :href="'?projectId=' + project_prop.id" class="card-link" v-if="project_prop.linkTo == undefined" ></a>
-            <a :href="project_prop.linkTo" class="card-link" v-else target="_blank"></a>
+            <a :href="'?projectId=' + project_prop.id" class="card-link" ></a>
             <div class="card">
                 <div class="img-wrap">
                     <div class="img-filter"></div>
