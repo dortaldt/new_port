@@ -108,7 +108,7 @@ projects = [
         "id": 3,
         "name": "No Bullshit Recipes",
         "platform": "Web",
-        "shortDes":"A recipe app for people how hates recipe apps, but do like cooking",
+        "shortDes":"A recipe app for people who hates recipe apps, but do like cooking",
         "longDes":["This is a new concept app for cooking instructions. The idea behind this app is to optimize the UX for using recipes while executing the instructions . Please visit the live app for experiencing the product."],
         "previewImg":"./images/overviews/banana_overview.png",
         "mainImg":"./images/overviews/banana_overview.png",
