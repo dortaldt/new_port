@@ -8,8 +8,10 @@ projects = [
         "mainImg":"https://player.vimeo.com/video/69424855",
         "mainVideo": true,
         "longDes": [
-            "From the dawn of civilization, man has tried to foretell, predict, and forecast his future. From the movement of the stars to modern meteorology, man has searched for patterns that can indicate the imminent future. The project seeks to give a contemporary interpretation to predicting the future in the form of interactive watches that present the user with personalized predictions in different areas of life, such as career, love, friendships, and more. ",
-            "The app uses an algorithm that looks for patterns and connections within the stream of data the user produces throughout his life. When it identifies a predictable action, a recommended response for solving the problem or enhancing the experience is calculated and presented. The interaction with the app is performed through designated projectors that use personal surfaces for presenting the interfaced. "
+            "Every single day, all of us are generating enamours amount of data: texting, sending emails, navigating to a new place, and multiple other digital activities which leave a long trail of digital footprint behind. This data is collected and analysed by various companies which in turn, using this data for there own needs.",
+            "But what about us? The users who are generating this data. How can we use this data back for ourselves? After all, it is ours.",
+            "The development process started by researching my personal data. I collected my entire digital activities for three months: Whatsapp messages, emails, calendar events and several more other data points. Then, by using simple tools, I started exploring patterns where there is a correlation between events and documented those. Those patterns were the basis for creating the concept for the app.",
+            "In its essence, Predicatbles is a personal assistant app. By tracking your daily activity, the app algorithms can generate spontaneous recommendations for improving your day. While focusing mostly on the digital interface of the app, in this project, I asked to provide also an alternative way to consume the information using designated projectors."
         ],
         "sections":[
             {
@@ -44,8 +46,9 @@ projects = [
         "maiImg2x": "./images/overviews/rocket_overview_2x.png",
         "mainImg":"./images/overviews/rocket_overview.jpg",
         "longDes":[
-            "One of the critical aspects of playing a competitive game is the ability to track your progression and improvement. Rocket League is one of the most popular esports play today, and yet, its stats screen has been neglected for a long time. Many users have testified the information is shown currently is misaligned with their actual excitement while achieving those records.",
-            "In this project, I've redesigned the stats screen for presenting the desired information (as been testified by actual users). Following the gaming world visual language, my goal was to create a better visual hierarchy, as well as to provide new, engaging, information. "
+            "eSport games are not all about winning (although it is an essential part of the experience without doubts). Gamers are engaged not only with the 5:00 min rounds of games but also, as in regular sports, with the game's overall statistical data.",
+            "For players, it is vital to see their progression over time - what are their strengths are and what are the areas which they need to practice harder.",
+            "After hearing multiple complaints from the gamers community regarding the current statistics screen of the game, I decided to create a proposal for a better way to serve this (and new) information. During the design process, one of my goals was to stay consistent with the overall visual language of the game."
         ],
         "sections":[
             {
