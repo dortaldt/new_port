@@ -64,7 +64,7 @@ a {
 }
 
 a:hover {
-    border-bottom: 1px solid #F2D74C;
+    border-bottom: 1px solid #F2D74C !important;
 }
 
 ul {
@@ -202,6 +202,7 @@ section > h1 {
     line-height: 52px;
     /* font-weight: 100; */
     text-decoration: none;
+    border-bottom: 1px solid transparent;
 }
 
 #contact-sec ul img {
@@ -315,8 +316,8 @@ section > h1 {
 }
 
 .project-sec-img {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     /* width: 78%; */
     height: auto;
 }
@@ -332,9 +333,12 @@ section > h1 {
 .project-main-img img{
     width: 100%;
     margin: 24px auto;
-    /* max-width: 800px; */
-    /* margin: auto; */
     display: inherit;
+}
+
+.project-main-img {
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .project-main-video {
