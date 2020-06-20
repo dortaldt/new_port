@@ -242,7 +242,7 @@ section > h1 {
 }
 
 .card-link:hover {
-    border: none;
+    border-bottom: black !important;
 }
 
 .card h1 {
