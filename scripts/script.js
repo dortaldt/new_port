@@ -22,7 +22,7 @@ Vue.component('video-player', {
 })
 
 Vue.component('app-header', {
-    props: ["title"],
+    props: ["title","menuState","menuItems"],
     data: function () {
       return {
         // dataTitle: title,
@@ -35,7 +35,8 @@ Vue.component('app-header', {
             <button @click="this.app.toggleMenu()">
                 <span class="material-icons">menu</span>
             </button>
-            <span><a href="./" >{{title}}</a></span>
+            <a href="./" >{{title}}</a>
+            <nav-menu :menuState="menuState" :items="menuItems"></nav-menu>
         </div>
     </div>
     `
@@ -52,7 +53,7 @@ Vue.component('nav-menu', {
     `<div :class="{'menu-wrap': true, 'menu-open': menuState}">
         <div class="menu-header">
             <h2>Where to?</h2>
-            <button @click="this.app.toggleMenu()"><span class="material-icons">close</span></button>
+            <button @click="this.app.toggleMenu()" ><span class="material-icons">close</span></button>
         </div>            
         <ul>
             <li v-for="(item, index) in items">
@@ -140,20 +141,26 @@ var app = new Vue({
 
         var d = new Date();
         this.date = d.getFullYear();
+
+        document.addEventListener('click', this.close)
     },
+
     methods: {
         linkTo: function(id){
             this.selectedPage = "project"
             console.log('click')
         },
-        toggleMenu: function(){
-            if(this.menuState){
-                this.menuState = 0
-            } else {
-                this.menuState = 1
-            }
-            console.log(this.menuState)
+
+        toggleMenu: function(e){
+            this.menuState = !this.menuState
         },
+
+        close: function (e) {
+            if (!this.$refs["menuButton"].$el.contains(e.target)) {
+              this.menuState = 0
+            }
+        },
+
         smoothScroll: function(link){
             // const index = 0;
             // var slected_item = this.menuItems[index].name
