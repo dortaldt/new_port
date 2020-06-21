@@ -96,21 +96,27 @@ header {
     width: 100%;
     max-width: 1000px;
     margin: auto;
+    display: flex;
 }
 
 header button {
-    /* position: relative; */
+    height: 56px;
     background: none;
     border: none;
-    color: #F2D74C;
+    color: #e9cf48;
+}
+
+.menu-header button {
+    color: black;
 }
 
 header a {
     text-decoration: none;
+    margin: auto 0px;
 }
 
 header a:hover {
-    border:none;
+    border-bottom: none !important;
 }
 
 .nav-placeholder {
@@ -351,13 +357,14 @@ section > h1 {
     top: 0;
     left: -100%;
     height: 100vh;
-    /* width: 70%; */
+    width: 100%;
     position: fixed;
     background-color: #F2D752;
     z-index: 4000;
     color: black;
     /* padding: 24px; */
-    transition: 0.3s;
+    transition: 0.1s;
+    box-shadow: 1px 3px 12px #00000040;
 }
 
 .video-player {
@@ -526,13 +533,41 @@ footer {
         flex-wrap: wrap;
     }
 
+    .header-cont {
+        position: relative;
+        /* font-size: 16px; */
+    }
+
     .menu-wrap {
-        /* left: 0; */
-        width: 50%;
-        /* position: fixed; */
-        /* top: 3px; */
-        /* background-color: black; */
-        /* color: #F2D74C; */
+        left: 24px;
+        width: fit-content;
+        position: absolute;
+        top: 44px;
+        border-radius: 8px;
+        height: 0px;
+        max-height: 0px;
+        overflow: hidden;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.1s;
+    }
+
+    .menu-wrap li, .menu-header h2 {
+        font-size: 16px;
+    }
+
+    .menu-header button {
+        display: none;
+    }
+
+    .menu-open {
+        height: fit-content;
+        /* display: block; */
+        max-height: fit-content;
+        overflow: hidden;
+        font-size: 16px !important;
+        transform: scaleY(1);
+        transform-origin: top;
     }
   }
 

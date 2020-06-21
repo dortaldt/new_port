@@ -31,10 +31,9 @@
   <body>
     <div id='app'>
       <header>
-        <app-header :title="appName"></app-header>
+        <app-header ref="menuButton" :title="appName" :menu-items="menuItems" :menu-state="menuState"></app-header>
       </header>
       <div class="desktop-layout">
-        <nav-menu :menu-state="menuState" :items="menuItems"></nav-menu>
         <div :class="{'page' : true, 'home' : selectedPage == 'home'}" v-if="selectedPage == 'home'">
 
           <!-- Landing page section -->
