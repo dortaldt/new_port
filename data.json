@@ -106,6 +106,7 @@ projects = [
 
         ]
     },
+
     {
         "id": 3,
         "name": "No Bullshit Recipes",
@@ -116,6 +117,7 @@ projects = [
         "mainImg":"./images/overviews/banana_overview.png",
         "linkTo":"https://www.thebananabread.com/"
     },
+
     {
         "id": 4,
         "name": "Not Yet App",
@@ -128,6 +130,31 @@ projects = [
             "'Is the baby here yet??' -- I found my self facing this same question over and over while my partner got closer to her due date. So I decided to build a solution: Not Yet App.",
             "In the beginning, I designed a static landing page. To update the status, I was required to edit the HTML file, which of course was not what I was free to do while supporting my partner at the hospital. Then, when more people asked to use the page for their needs, I added the possibility to create any question, save its status, and to change the answer quickly using GUI.",
             "'Not Yet' is all about quick updates for any boolean question. The app lets the user to create a landing page to any question they need quickly, and to change the answer when needed -- yes or no. By providing others with a self-catered service, the app can reduce unneeded communication for the user and free them to focus on more critical tasks."
+        ]
+    },
+
+    {
+        "id": 5,
+        "name": "Circuito.io",
+        "platform": "Web",
+        "shortDes":"Instantly get a detailed Bill of Materials, wiring guide and test code for your electronic circuit and bring your project to life.",
+        "previewImg":"./images/overviews/cir_overview.png",
+        "mainImg":"./images/overviews/cir_overview.png",
+        "linkTo":"https://www.circuito.io/",
+        "longDes":[
+            "circuito.io gives you an opportunity to focus on the essence of your idea, while it solve the nitty gritty details of the design & automagically compute a detailed Bill of materials, wiring instructions and sample code for you to start building."
+        ],
+        "sections":[
+            {
+                "id": 0,
+                "title": "WYSIWYG interface",
+                "imgUrl": "./images/projects/cir/cir_2.png"
+            },
+            {
+                "id": 1,
+                "title": "step-by-step assembly instructions",
+                "imgUrl": "./images/projects/cir/cir_1.png"
+            }
         ]
     }
 ]
