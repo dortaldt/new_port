@@ -305,6 +305,7 @@ section > h1 {
     display: flex;
     text-decoration: none;
     width: fit-content;
+    bottom-border: 1px solid black;
 }
 
 .project-header p {
